@@ -1,0 +1,89 @@
+.MovieDetailsContainer {
+    display: flex;
+    background-color: #fff;
+    flex-direction: row;
+    padding: 60px 40px;
+    column-gap: 30px;
+}
+
+.MovieDetailsImage {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.MovieDetailsInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: flex-end;
+    padding-bottom: 35px;
+}
+
+.ProductDetailsNamewithFav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7px 0px 7px;
+}
+.MovieSubDetails {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-align: justify;
+    padding: 0px 7px 0px 7px;
+}
+
+.MovieDetailsInfo>button {
+    height: 35px;
+    width: 110px;
+    border: none;
+    background-color: #c62828;
+    font-size: 14px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0px 2px 2px 0px #c62828;
+    transition: .3s ease-in-out;
+}
+
+.MovieDetailsInfo>button:hover {
+    background-color: #e53935;
+}
+
+@media only screen and (max-width: 768px) {
+    .MovieDetailsContainer {
+        flex-wrap: wrap;
+        padding: 30px;
+        row-gap: 15px;
+        justify-content: space-evenly;
+    }
+
+    .MovieDetailsImage {
+        width: 250px;
+        height: auto;
+    }
+
+    .MovieDetailsInfo {
+        row-gap: 12px;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+        padding-top: 7px;
+        border-top: 1px solid rgb(189, 186, 186);
+    }
+
+    .ProductDetailsNamewithFav {
+        font-size: 14px;
+        font-weight: 400;
+        column-gap: 20px;
+    }
+
+    .MovieSubDetails {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

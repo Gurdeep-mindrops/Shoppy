@@ -1,0 +1,26 @@
+.MoviesSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px 25px;
+}
+
+@media only screen and (max-width: 430px) {
+    .MoviesSection{
+        padding: 40px 15px;
+    }  
+
+    .cardContainer{
+        gap: 35px 15px;
+    }
+    
+}

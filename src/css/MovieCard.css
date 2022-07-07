@@ -1,0 +1,90 @@
+.MovieCard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 190px;
+    cursor: pointer;
+    row-gap: 8px;
+    border-radius: 15px;
+    background-color: #f3e1e8;
+    animation: fadeIn; 
+    animation-duration: 2s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.cardSection1{
+    position: relative;
+}
+
+.MovieImage{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.cardSection2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 58px;
+    padding-right: 3px;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 0px 6px;
+}
+
+.MovieName{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cardSection3{
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    font-weight: 600;
+    column-gap: 4px;
+    text-transform: capitalize;
+    color: rgb(123, 122, 122);
+    padding: 0px 6px;
+}
+
+.InfoMain{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+    color: rgb(123, 122, 122);
+    padding-bottom: 5px;
+}
+
+
+.starRatingContainer{
+    display: flex;
+    column-gap: 14px;
+    color: white;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+.starRating{
+    background-clip: text;
+    color: transparent;
+}
+
+
+div .favoriteHeart > span i{
+    transition: .3s ease-in-out;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 430px) {
+    .MovieCard{
+        width: 130px;
+        row-gap: 4px;
+        padding: 8px;
+    }
+}
+
